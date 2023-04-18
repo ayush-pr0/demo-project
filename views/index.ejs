@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/typing.css" />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+            defer
+        ></script>
+        <script src="js/script.js" defer></script>
+        <title>HealthGPT</title>
+    </head>
+    <body>
+        <div id="center-text">
+            <h2>HealthGPT</h2>
+            <p>Message send and scroll to bottom enabled</p>
+        </div>
+        <div id="body">
+            <div id="chat-circle" class="btn btn-raised">
+                <div id="chat-overlay"></div>
+                <img class="chat-circle-bot" src="img/healthGPT.png" />
+            </div>
+
+            <div class="chat-box">
+                <div class="chat-box-header">
+                    &nbsp; &nbsp; HealthGPT
+                    <span class="chat-box-toggle"
+                        ><i class="material-icons">close</i></span
+                    >
+                </div>
+                <div class="chat-box-body">
+                    <div class="chat-box-overlay"></div>
+                    <div class="chat-logs"></div>
+                    <!--chat-log -->
+                </div>
+                <div class="chat-input">
+                    <form">
+                        <input
+                            type="text"
+                            id="chat-input"
+                            placeholder="Send a message..."
+                            name="chatInput"
+                        />
+                        <button
+                            type="button"
+                            class="chat-submit"
+                            id="chat-submit"
+                        >
+                            <i class="material-icons">send</i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
