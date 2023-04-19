@@ -98,4 +98,11 @@ $(function () {
         $("#chat-circle").toggle("scale");
         $(".chat-box").toggle("scale");
     });
+
+    $(".chat-box-delete").click(function () {
+        localStorage.clear("chats");
+        chats.length = 1;
+        $(".chat-msg").remove();
+        generate_message(chats[0].msg, chats[0].type);
+    });
 });
